@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Overlays Unificados - Vertical</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    #overlay-container {
+      position: relative;
+      width: 1080px;   /* Vertical */
+      height: 1920px;  /* Vertical */
+      background: transparent;
+    }
+
+    .overlay-box {
+      position: absolute;
+      background: transparent;
+      overflow: hidden;
+    }
+
+    /* Top G */
+    #topG {
+      width: 230px;
+      height: 200px;
+      top: 956px;
+      left: 10px;
+    }
+
+    /* Top Liker */
+    #topLiker {
+      width: 300px;
+      height: 210px;
+      top: 20px;
+      right: 20px;
+    }
+
+    /* Gift Counter */
+    #gCounter {
+      width: 200px;
+      height: 200px;
+      bottom: 20px;
+      left: 700px;
+    }
+
+    /* Regalos */
+    #regalos {
+      width: 300px;
+      height: 300px;
+      bottom: 700px;
+      right: 20px;
+    }
+
+    /* My Actions (centrado vertical) */
+    #myActions {
+      width: 300px;
+      height: 200px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .overlay-box iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="overlay-container">
+    <div id="topG" class="overlay-box">
+      <iframe src="https://tikfinity.zerody.one/widget/topg?cid=19064"></iframe>
+    </div>
+    <div id="topLiker" class="overlay-box">
+      <iframe src="https://tikfinity.zerody.one/widget/topliker?cid=19064"></iframe>
+    </div>
+    <div id="gCounter" class="overlay-box">
+      <iframe src="https://tikfinity.zerody.one/widget/gcounter?cid=19064&c=1"></iframe>
+    </div>
+    <div id="regalos" class="overlay-box">
+      <iframe src="https://soysupertk.github.io/regalos-tiktok/regalos.html"></iframe>
+    </div>
+    <div id="myActions" class="overlay-box">
+      <iframe src="https://tikfinity.zerody.one/widget/myactions?cid=19064&screen=1"></iframe>
+    </div>
+  </div>
+</body>
+</html>
