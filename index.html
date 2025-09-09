@@ -75,6 +75,18 @@
       --scale: 1.3;     
     }
 
+    /* CAÑOM */
+    #cañonregalos {
+      width: 1080px;
+      height: 980px;
+      top: 939px;       
+      left: 50%;        
+      transform: translateX(-50%) scale(var(--scale)); 
+      transform-origin: center top; /* 👈 se escala desde el centro horizontal */
+      --scale: 1;     
+    }
+
+    
     .overlay-box iframe {
       width: 100% !important;
       height: 100% !important;
@@ -87,6 +99,9 @@
   <div id="overlay-container">
     <div id="topG" class="overlay-box">
       <iframe src="https://tikfinity.zerody.one/widget/topg?cid=19064"></iframe>
+    </div>
+    <div id="cañonregalos" class="overlay-box">
+      <iframe src="https://tikfinity.zerody.one/widget/cannon?cid=19064"></iframe>
     </div>
     <div id="topLiker" class="overlay-box">
       <iframe src="https://tikfinity.zerody.one/widget/topliker?cid=19064"></iframe>
@@ -103,6 +118,7 @@
   </div>
 </body>
 </html>
+
 
 
 
